@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Page</title>
+    <title>The Great Indian Food Tour</title>
     <style>
         body {
             margin: 0;
@@ -26,7 +26,7 @@
             grid-row: 3 / 4;
             grid-column: 2 / 3;
             place-self: center;
-            background-color: #3498db;
+            background-color: #9A2A03;
             color: #fff;
             padding: 15px 30px;
             border: none;
@@ -34,10 +34,25 @@
             font-size: 24px;
             border-radius: 5px;
         }
+
+        /* Add a media query for smaller screens (adjust max-width as needed) */
+        @media (max-width: 768px) {
+            body {
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            #background-image {
+                grid-row: 1 / 5;
+            }
+
+            #signup-button {
+                grid-row: 4 / 5;
+            }
+        }
     </style>
 </head>
 <body>
-    <img id="background-image" src="thegift.png" alt="The Great Indian Food Tour!">
+    <img id="background-image" src="thegift.png" alt="Background Image">
     <button id="signup-button">Sign up</button>
 </body>
 </html>
